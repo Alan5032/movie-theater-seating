@@ -29,7 +29,8 @@ public class Main {
             }
             // Get a parseable scanner for the input file and create an output file
             Scanner file = new Scanner(new File(args[0]));
-            PrintStream output = new PrintStream("output.txt");
+            File outputFile = new File("output.txt");
+            PrintStream output = new PrintStream(outputFile);
             // While the input file has more reservations
             while (file.hasNextLine()) {
                 // Split the reservation into its identifier and number of people
@@ -57,6 +58,7 @@ public class Main {
                 }
                 output.println();
             }
+        System.out.println("Output File Path: " + outputFile.getAbsolutePath());
         // Failed to open a file based on the inputted path
         } catch (FileNotFoundException e) {
             System.out.println("Failed to open file.");
