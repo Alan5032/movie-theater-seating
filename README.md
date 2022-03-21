@@ -2,7 +2,7 @@ Code for an interview assignment.
 
 Instructions:
   1. Download "Theater.java" and "Main.java" to the same directory.
-  2. Open up commmand line and navigate the directory with the downloaded files.
+  2. Open up commmand line and navigate to the directory with the downloaded files.
   3. Compile the files by running "javac Theater.java Main.java" in the command line.
   4. Execute the program with an input file by running "java Main.java \<absolute path of input file>"
   5. View the output file that is located via the path printed to console by the program.
